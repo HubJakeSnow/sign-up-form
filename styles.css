@@ -1,0 +1,84 @@
+@font-face {
+    font-family: SnowCaps;
+    src: url("fonts/SnowCaps/SNOWCAPS.TTF");
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.left-panel {
+    position: relative;
+    left: 0px;
+    max-width: 500px;
+}
+
+.logo-title {
+    font-family: SnowCaps, sans-serif;
+    position: absolute;
+    bottom: 0px;
+    left: 131px;
+}
+
+.logo-image {
+    position: absolute;
+    bottom: 5px;
+    left: 8em;
+}
+
+span {
+    color: white;
+    position: absolute;
+    top: 3px;
+    left: 131px;
+}
+
+.right-panel {
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    right: 0px;
+    background-color: aqua;
+    height: 625px;
+}
+
+h3 {
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+h3.know-text {
+    margin-bottom: 2em;
+    margin-top: 0em;
+}
+
+.container {
+    background-color: lightgray;
+}
+
+.right-panel .bottom-right {
+    margin-top: 2em;
+}
+
+.create-account {
+    background-color: lightgray;
+    color: white;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+fieldset.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(3, 1fr); /* Three rows */
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+label {
+    padding: 10px;
+}

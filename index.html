@@ -8,12 +8,51 @@
     <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <form>
+    <div class="left-panel">
+        <img src="imgs/snow" class="background" alt="Image of a pretty snowy street.">
+        <div class="logo">
+            <img src="imgs/logo-no-bgd.png" class= "logo-image" height="190px" width="254px" alt="The company's logo which is a snowman.">
+            <h1 class="logo-title">Snowy Cities</h1>
+        </div>
+        <span>Photo by Josh Hild on Unsplash</span>
+    </div>
 
+    <div class="right-panel">
+        <div class="top-right">
+            <h3>This is not a real online service. This is pretending to be a website where you can view different, beautiful snowy cities across the world. Explore our webpage before you explore the world!</h3>
+            <p><h3 class="know-text">You <i>know</i> you want to.</h3></p>
+        </div>
+        
+        <div class="container">
+            <form>
+                <h2>Sign-Up</h2>
+                <fieldset class="container">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
 
+                    <label for="last">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{11}">
 
-    </form>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="bottom-right">
+            <button class="create-account">Create Account</button>
+            <div class="account-q">Already have an account? Log in</div>
+        </div>
+
+    </div>
 </body>
 </html>
