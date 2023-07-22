@@ -5,8 +5,8 @@
 
 body {
     font-family: sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .left-panel {
@@ -168,8 +168,8 @@ a:hover {
     color: rgb(77, 77, 77);
 }
 
-/*  */
 
+/* Scaling */
 
 @media only screen and (max-width: 600px) {
     .content {

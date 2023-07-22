@@ -15,41 +15,35 @@
                 <h1 class="logo-title">Snowy Cities</h1>
             </div>
             <span>Photo by Josh Hild on <a href="https://unsplash.com/photos/_TuI8tZHlk4">Unsplash.</a></span>
-  
         </div>
         <div class="right">
             <div class="top-right">
                 <p class="left">This is not a real online service. This is pretending to be a website where you can view different, beautiful snowy cities across the world. Explore our webpage before you explore the world!</p>
                 <p class="know-text left">You <i>know</i> you want to.</p>
             </div>
-            <form action="#">
+            <form action="#" onsubmit="checkPasswords(); return false;">
                 <div class="form left">
                     <p class="form-title">Sign-Up</p>
                     <div class="input">
                         <label for="first-name">First name</label>
                         <input type="text" name="first-name" id="first-name" required>
                     </div>
-                    
                     <div class="input">
                         <label for="last-name">Last name</label>
                         <input type="text" name="last-name" id="last-name">
                     </div>
-                    
                     <div class="input">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" required>
                     </div>
-                    
                     <div class="input">
                         <label for="phone-number">Phone number</label>
                         <input type="text" name="phone-number" id="phone-number" minlength="9" maxlength="9">
                     </div>
-                    
                     <div class="input">
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" required>
                     </div>
-                    
                     <div class="input">
                         <label for="confirm-password">Confirm password</label>
                         <input type="password" name="confirm-password" id="confirm-password" required>
@@ -59,7 +53,7 @@
             </form>
             <div class="log-in left"><p>Already have an account?</p><a href="#">Log in</a></div>
         </div>
-
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
