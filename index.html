@@ -4,53 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
     <title>Sign-up Form</title>
-    <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
     <div class="left-panel">
-        <img src="imgs/snow" class="background" alt="Image of a pretty snowy street.">
-        <div class="logo">
-            <img src="imgs/logo-no-bgd.png" class= "logo-image" height="190px" width="254px" alt="The company's logo which is a snowman.">
-            <h1 class="logo-title">Snowy Cities</h1>
+        <div class="picture">
+            <div class="logo">
+                <img src="imgs/logo-no-bgd.png" alt="logo" class="snowman">
+                <h1 class="logo-title">Snowy Cities</h1>
+            </div>
+            <span>Photo by Josh Hild on <a href="https://unsplash.com/photos/_TuI8tZHlk4">Unsplash.</a></span>
+  
         </div>
-        <span>Photo by Josh Hild on Unsplash</span>
-    </div>
-
-    <div class="right-panel">
-        <div class="top-right">
-            <h3>This is not a real online service. This is pretending to be a website where you can view different, beautiful snowy cities across the world. Explore our webpage before you explore the world!</h3>
-            <p><h3 class="know-text">You <i>know</i> you want to.</h3></p>
-        </div>
-        
-        <div class="container">
-            <form>
-                <h2>Sign-Up</h2>
-                <fieldset class="container">
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name" required>
-
-                    <label for="last">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{11}">
-
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <label for="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                </fieldset>
+        <div class="right">
+            <div class="top-right">
+                <p class="left">This is not a real online service. This is pretending to be a website where you can view different, beautiful snowy cities across the world. Explore our webpage before you explore the world!</p>
+                <p class="know-text left">You <i>know</i> you want to.</p>
+            </div>
+            <form action="#">
+                <div class="form left">
+                    <p class="form-title">Sign-Up</p>
+                    <div class="input">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                    
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="phone-number">Phone number</label>
+                        <input type="text" name="phone-number" id="phone-number" minlength="9" maxlength="9">
+                    </div>
+                    
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                </div>
+                <div class="left button"><button type="submit">Create Account</button></div>
             </form>
-        </div>
-
-        <div class="bottom-right">
-            <button class="create-account">Create Account</button>
-            <div class="account-q">Already have an account? Log in</div>
+            <div class="log-in left"><p>Already have an account?</p><a href="#">Log in</a></div>
         </div>
 
     </div>

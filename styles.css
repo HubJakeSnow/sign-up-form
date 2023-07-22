@@ -3,82 +3,237 @@
     src: url("fonts/SnowCaps/SNOWCAPS.TTF");
 }
 
-body{
+body {
     font-family: sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 .left-panel {
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-panel,
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* left side */
+
+.picture {
+    background-image: url(imgs/snow);
+    background-position: 30% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 100vh; 
+}
+
+.logo {
+    height: auto;
+    background-color: rgba(169, 169, 169, 0.75);
     position: relative;
-    left: 0px;
-    max-width: 500px;
+    top: 0vh;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-title {
     font-family: SnowCaps, sans-serif;
-    position: absolute;
-    bottom: 0px;
-    left: 131px;
 }
 
-.logo-image {
-    position: absolute;
-    bottom: 5px;
-    left: 8em;
+.snowman {
+    height: 10vh;
+}
+
+
+span a {
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+span a:hover {
+    color: lightgray;
 }
 
 span {
     color: white;
     position: absolute;
-    top: 3px;
-    left: 131px;
+    bottom: 0vh;
+    margin: 1px;
+    font-weight: 400;
 }
 
-.right-panel {
-    position: absolute;
-    top: 0px;
-    left: 500px;
-    right: 0px;
-    background-color: aqua;
-    height: 625px;
+
+/* right side */
+
+.right {
+    width: 60vw;
+    background-color: darkgray;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    
+
 }
 
-h3 {
-    margin-top: 2em;
-    margin-right: 2em;
-    margin-left: 2em;
+.left {
+    padding-left: 3vw;
 }
 
-h3.know-text {
-    margin-bottom: 2em;
-    margin-top: 0em;
-}
-
-.container {
-    background-color: lightgray;
-}
-
-.right-panel .bottom-right {
-    margin-top: 2em;
-}
-
-.create-account {
-    background-color: lightgray;
-    color: white;
+.top-right {
     font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 3vh;
+
+}
+
+
+/* form */
+
+.form {
+    background-color: lightgray;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    opacity: 50%;
+}
+
+.form-title {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 15px 0px;
+}
+
+input {
+    background-color: rgb(2, 2, 2);
+    border: 1px solid rgb(77, 77, 77);
     border-radius: 3px;
-    font-size: 20px;
+    color: white;
     padding: 5px;
 }
 
-fieldset.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-template-rows: repeat(3, 1fr); /* Three rows */
-    grid-gap: 10px; /* Gap between grid items */
+input:focus {
+    outline: none;
 }
 
-label {
-    padding: 10px;
+button {
+    background-color: lightgray;
+    font-weight: 600;
+    font-size: 1.2em;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+button:hover {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    
+}
+
+.log-in {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: -25px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+a:hover {
+    color: rgb(77, 77, 77);
+}
+
+/*  */
+
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+    .picture {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+    .logo {
+        width: 100vw;
+        position: static;
+        gap: 10px;
+    }
+    .right {
+        width: auto;
+        height: auto;
+    }
+    .top-right {
+        width: auto;
+        margin-top: 30px;
+
+    }
+    .left {
+        padding: 10px 20px;
+    }
+    .know-text{
+        padding: 20px 0;
+        margin: 0;
+    }
+    .form{
+        flex-flow: column nowrap;
+        align-items: center;
+
+    }
+    .input{
+        text-align: left;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+
+    .button,
+    .log-in{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    button{
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+    }
+
 }
